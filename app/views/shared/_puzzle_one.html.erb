@@ -1,0 +1,23 @@
+<p>パズル1</p>
+  <div class="pazzle_one">
+    <div id="one-one", class="panel", style="background-color:lightcoral;"></div>
+    <div id="one-two", class="panel", style="background-color:lightcoral;"></div>
+    <div id="one-thr", class="panel", style="background-color:lightcoral;"></div>
+  </div class="pazzle_one">
+  <div class="pazzle_two">
+    <div id="two-one", class="panel", style="background-color:lightcoral;"></div>
+    <div id="two-two", class="panel", style="background-color:lightcoral;"></div>
+    <div id="two-thr", class="panel", style="background-color:lightcoral;"></div>
+  </div class="pazzle_two">
+  <div class="pazzle_thr">
+    <div id="thr-one", class="panel", style="background-color:lightcoral;"></div>
+    <div id="thr-two", class="panel", style="background-color:lightcoral;"></div>
+    <div id="thr-thr", class="panel", style="background-color:lightcoral;"></div>
+  </div class="pazzle_thr">
+
+<div id="form">
+    <%= form_with url: "/puzzle", method: :post, local: true do |f| %>
+      <%= f.submit "クリアしたことを保存する", class:"clear-btn" %>
+      <%= f.hidden_field :number, :value => "1" %>
+      <% end %>
+</div>
