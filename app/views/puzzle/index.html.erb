@@ -1,25 +1,34 @@
-<h1>パズルゲーム</h1>
-<div class="parson">
+<h1 class="top">パズルゲーム</h1>
+<div class="background">
   <% if user_signed_in? %>
-    <div>
+    <div class="logout-pare">
       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
     </div>
     <div class="stage">
-      <%= link_to 'ステージ1', new_puzzle_path, class: "stage-one" %>
-      <% if @puzzle.find_by(user_id: current_user.id, number:1) %>
-      <span class="clear">clear!</span>
+      <%= link_to 'ステージ1', new_puzzle_path(stage: "1"), class: "stage-child"%>
+      <% if Puzzle.where(user_id: current_user.id).find_by(user_id: current_user.id, number:1) %>
+      <div class="clear">clear!</div>
+      <% end %>
+      </div>
+      <div class="stage">
+      <%= link_to 'ステージ2', new_puzzle_path(stage: "2"), class: "stage-child"%>
+      <% if Puzzle.where(user_id: current_user.id).find_by(user_id: current_user.id, number:2) %>
+      <div class="clear">clear!</div>
       <% end %>
     </div>
   <% else %>
+  <div class="regises">
     <div>
       <%= link_to '新規登録', new_user_registration_path, class: "registrations" %>
     </div>
-    <br>
     <div>
       <%= link_to 'ログイン', new_user_session_path, class: "sessions" %>
     </div>
+    </div>
   <% end %>
-  <% if Puzzle.where(id: 1).empty? %>
+  <% if user_signed_in?%>
+  <% unless Puzzle.where(user_id: current_user.id).empty? %>
     <%= link_to 'クリア状況をリセットする', "/puzzle/:id", method: :delete, class: "reset"%>
   <% end %>
+  <%end%>
 </div>

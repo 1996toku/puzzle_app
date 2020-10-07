@@ -1,0 +1,112 @@
+a {
+  text-decoration: none;
+}
+
+.background{
+  height: 100vh;
+  background-color: rgb(241, 241, 149);
+}
+
+.top{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  font-size: 50px;
+  background-color: lightgoldenrodyellow;
+  align-items: center;
+}
+
+.regises{
+  display: flex;
+  justify-content: center;
+}
+
+.logout-pare{
+  display: flex;
+  justify-content: center;
+}
+
+.logout{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightgreen;
+  color: black;
+  font-size: 20px;
+  height: 60px;
+  width: 200px;
+  margin: 10px;
+}
+
+.stage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.stage-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightcoral;
+  color: black;
+  font-size: 24px;
+  height: 100px;
+  width: 400px;
+  margin: 0 0 10px;
+}
+
+.clear{
+  background-color:lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.registrations{
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightgreen;
+  color: black;
+  font-size: 20px;
+  height: 60px;
+  width: 200px;
+  margin: 10px;
+
+}
+
+.sessions{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightgreen;
+  color: black;
+  font-size: 20px;
+  height: 60px;
+  width: 200px;
+  margin: 10px;
+
+}
+
+.reset{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lightgreen;
+  color: black;
+  font-size: 20px;
+  height: 60px;
+  width: 250px;
+  margin: 10px auto 10px;
+}
+

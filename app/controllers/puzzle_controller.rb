@@ -1,12 +1,8 @@
 class PuzzleController < ApplicationController
   def index
-    if authenticate_user! 
-      @puzzle = Puzzle.where(user_id: current_user.id) 
-    end
   end
   
   def new
-    @puzzle = Puzzle.new
   end
 
   def create

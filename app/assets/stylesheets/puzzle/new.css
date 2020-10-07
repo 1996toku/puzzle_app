@@ -1,0 +1,53 @@
+ p{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  font-size: 50px;
+  background-color: lightgoldenrodyellow;
+  align-items: center;
+}
+
+.background{
+  height: 100vh;
+  background-color: rgb(241, 241, 149);
+}
+
+.rule{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  margin: 5px;
+  font-size: 50px;
+  margin: 0 auto 0;
+}
+ 
+ .puzzle-all{
+  display: flex;
+  justify-content: center;
+}
+
+ .panel{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+ }
+
+ .pazzle_one{
+  display: flex;
+ }
+
+ .pazzle_two{
+  display: flex;
+ }
+
+ .pazzle_thr{
+  display: flex;
+ }
