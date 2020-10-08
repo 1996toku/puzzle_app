@@ -15,7 +15,13 @@
       <% if Puzzle.where(user_id: current_user.id).find_by(user_id: current_user.id, number:2) %>
       <div class="clear">clear!</div>
       <% end %>
-    </div>
+      </div>
+      <div class="stage">
+      <%= link_to 'ステージ3', new_puzzle_path(stage: "3"), class: "stage-child"%>
+      <% if Puzzle.where(user_id: current_user.id).find_by(user_id: current_user.id, number:3) %>
+      <div class="clear">clear!</div>
+      <% end %>
+      </div>
   <% else %>
   <div class="regises">
     <div>

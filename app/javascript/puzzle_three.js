@@ -22,6 +22,7 @@ function puzzle() {
         }
         front_number = number + 1
         back_number = number - 1
+        //以下は横
         if (count == 1) {
           if (front_number == 1) {
             side_front_number = "one"
@@ -41,6 +42,7 @@ function puzzle() {
           } else {
             side_back_number = `${panel_str}`
           }
+          //以下は縦
         } else if (count == 2) {
           if (front_number == 1) {
             vertical_front_number = "one"

@@ -23,8 +23,7 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 100px;
-  margin: 5px;
+  height: 50px;
   font-size: 50px;
   margin: 0 auto 0;
 }
@@ -40,6 +39,12 @@
   margin: 5px;
  }
 
+ .panel_four{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+ }
+
  .pazzle_one{
   display: flex;
  }
@@ -49,5 +54,9 @@
  }
 
  .pazzle_thr{
+  display: flex;
+ }
+
+ .pazzle_fou{
   display: flex;
  }
