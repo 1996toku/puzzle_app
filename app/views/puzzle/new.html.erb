@@ -1,0 +1,12 @@
+<div class="background">
+<% if params[:stage] == "1" %>
+<%= render 'shared/puzzle_one.html.erb' %>
+<% elsif params[:stage] == "2" %>
+<%= render 'shared/puzzle_two.html.erb' %>
+<% elsif params[:stage] == "3" %>
+<%= render 'shared/puzzle_three.html.erb' %>
+<% end %>
+
+<br>
+<%=link_to 'トップページに戻る', root_path, class:"back-btn" %>
+</div>
